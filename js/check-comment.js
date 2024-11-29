@@ -13,8 +13,9 @@ const validateComment = (value) => {
 
   if (value.length > MAX_COMMENT_LENGTH) {
     errorMessage = `Длина комментария не может составлять больше ${MAX_COMMENT_LENGTH} символов`;
+  } else {
+    return true;
   }
-  return true;
 };
 
 export { errorComment, validateComment };
